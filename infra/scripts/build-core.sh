@@ -1,7 +1,7 @@
 #!/bin/sh
 # Build bsdos-core directly from 9p shared filesystem (/mnt/bsdos).
 # Run on the FreeBSD VM: gmake build-core
-# Or from host: ssh root@<host-ip> 'ssh -i <ssh-key> freebsd@<dev-vm-ip> "cd /mnt/bsdos && gmake build-core"'
+# Or from host/Mac: ssh root@178.72.134.178 'ssh -i /root/bsdOS/bsdos-key freebsd@178.72.134.185 "cd /mnt/bsdos && gmake build-core"'
 set -eu
 . "$(dirname "$0")/_ssh.sh"
 

@@ -4,7 +4,7 @@
 **Status:** Draft v1 (architect design)
 **Owner:** architect (claude-host / MiniMax M2.7)
 **Supersedes:** partial design in `PLAN-app-store.md` § Package Flow
-**Targets:** bsdOS codenames "Squirrel / sQuirrel" (v0.1.x, QEMU) → "Chimp" (v0.2, Allwinner H616/H618/A523 on Banana Pi) → "Porcupine" (v0.3, Allwinner A64 + Mali-400 + Mesa Lima on PinePhone) — per the animal-progression naming scheme in `ROADMAP.md`.
+**Targets:** bsdOS codenames "Squirrel / sQuirrel" (v0.1.x, QEMU) → "Chimp" (v0.2, Allwinner H616/H618/A523 on Banana Pi) → "Woodpecker" (v0.3, PinePhone A64 + Mali-400, oBzdOS/OpenBSD) — per the animal-progression naming scheme in `ROADMAP.md`.
 
 ---
 
@@ -74,7 +74,7 @@ maintainer        = "ports@bsdos.org"
 # hardware port. bsdOS-codename field mirrors ROADMAP.md scheme.
 [compatibility]
 bsdos_codename_min  = "Squirrel"   # earliest line supported (v0.1.x); sQuirrel alias accepted
-bsdos_codename_max  = "Porcupine"  # latest line tested (v0.3)
+bsdos_codename_max  = "Woodpecker"  # latest line tested (v0.3)
 freebsd_min         = "15.1"       # FreeBSD version floor
 freebsd_max         = "16.0"       # ceiling (exclusive)
 arch                = ["aarch64", "amd64"]   # supported CPU arches
@@ -144,7 +144,7 @@ source_url      = "https://github.com/bsdos/firefox-port"
 source_commit   = "abc123def456"          # git SHA
 build_host      = "freebsd-builder-01.bsdos.local"
 build_timestamp = "2026-06-15T14:00:00Z"
-build_user      = "builder"
+build_user      = "andreibodrov"
 reproducible    = true                       # if true, build script available
 build_script_url = "https://github.com/bsdos/firefox-port/blob/abc123/build.sh"
 freebsd_version = "15.1-RELEASE"
